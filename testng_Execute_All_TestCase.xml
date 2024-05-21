@@ -3,7 +3,12 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="test.FirstCase_original"/>
+      <class name="test.FirstCase"/>
+      <class name="test.FirstCase_POJO_using_parametrised_constructor_OverLoading"/>
+      <class name="test.FirstCase_POJO"/>
       <class name="test.FirstTestCase_POJO_fullTest"/>
+      <class name="test.FirstCase_POJO_using_Jackson"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
