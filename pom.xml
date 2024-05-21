@@ -20,7 +20,7 @@
 				  <parallel>methods</parallel>
                     <threadCount>6</threadCount>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>testng_Execute_Specific_TestCase.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

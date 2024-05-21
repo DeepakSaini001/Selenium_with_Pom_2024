@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="55.342" tests="3" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="64.297" tests="12" errors="0" skipped="0" failures="9">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="webdriver.chrome.driver" value="Drivers/chromedriver/mac-arm64/124.0.6367.207/chromedriver"/>
@@ -14,7 +14,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-21.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/surefire/surefirebooter-20240519125318946_3.jar /Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/surefire 2024-05-19T12-53-18_905-jvmRun1 surefire-20240519125318946_1tmp surefire_0-20240519125318946_2tmp"/>
+    <property name="sun.java.command" value="/Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/surefire/surefirebooter-20240521151435958_3.jar /Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/surefire 2024-05-21T15-14-35_917-jvmRun1 surefire-20240521151435958_1tmp surefire_0-20240521151435958_2tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/test-classes:/Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/classes:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-java/4.20.0/selenium-java-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-api/4.20.0/selenium-api-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/4.20.0/selenium-chrome-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-chromium-driver/4.20.0/selenium-chromium-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-json/4.20.0/selenium-json-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.20.0/selenium-manager-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v122/4.20.0/selenium-devtools-v122-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v123/4.20.0/selenium-devtools-v123-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v124/4.20.0/selenium-devtools-v124-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-devtools-v85/4.20.0/selenium-devtools-v85-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/4.20.0/selenium-edge-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/4.20.0/selenium-firefox-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-http/4.20.0/selenium-http-4.20.0.jar:/Users/deepaksaini/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/4.20.0/selenium-ie-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.20.0/selenium-remote-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/com/google/guava/guava/33.1.0-jre/guava-33.1.0-jre.jar:/Users/deepaksaini/.m2/repository/com/google/guava/failureaccess/1.0.2/failureaccess-1.0.2.jar:/Users/deepaksaini/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/deepaksaini/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/deepaksaini/.m2/repository/org/checkerframework/checker-qual/3.42.0/checker-qual-3.42.0.jar:/Users/deepaksaini/.m2/repository/com/google/errorprone/error_prone_annotations/2.26.1/error_prone_annotations-2.26.1.jar:/Users/deepaksaini/.m2/repository/com/google/j2objc/j2objc-annotations/3.0.0/j2objc-annotations-3.0.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/semconv/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-api/1.37.0/opentelemetry-api-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-context/1.37.0/opentelemetry-context-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.37.0/opentelemetry-exporter-logging-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.37.0/opentelemetry-sdk-common-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.37.0/opentelemetry-sdk-extension-autoconfigure-spi-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.37.0/opentelemetry-sdk-extension-autoconfigure-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-api-incubator/1.37.0-alpha/opentelemetry-api-incubator-1.37.0-alpha.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.37.0/opentelemetry-sdk-trace-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.37.0/opentelemetry-sdk-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.37.0/opentelemetry-sdk-metrics-1.37.0.jar:/Users/deepaksaini/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.37.0/opentelemetry-sdk-logs-1.37.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-os/4.20.0/selenium-os-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/apache/commons/commons-exec/1.4.0/commons-exec-1.4.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/4.20.0/selenium-safari-driver-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/seleniumhq/selenium/selenium-support/4.20.0/selenium-support-4.20.0.jar:/Users/deepaksaini/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/deepaksaini/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/deepaksaini/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/deepaksaini/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/deepaksaini/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/deepaksaini/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/deepaksaini/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/deepaksaini/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:/Users/deepaksaini/.m2/repository/io/github/bonigarcia/webdrivermanager/5.7.0/webdrivermanager-5.7.0.jar:/Users/deepaksaini/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/deepaksaini/.m2/repository/com/github/docker-java/docker-java/3.3.5/docker-java-3.3.5.jar:/Users/deepaksaini/.m2/repository/com/github/docker-java/docker-java-core/3.3.5/docker-java-core-3.3.5.jar:/Users/deepaksaini/.m2/repository/com/github/docker-java/docker-java-api/3.3.5/docker-java-api-3.3.5.jar:/Users/deepaksaini/.m2/repository/org/bouncycastle/bcpkix-jdk18on/1.76/bcpkix-jdk18on-1.76.jar:/Users/deepaksaini/.m2/repository/org/bouncycastle/bcprov-jdk18on/1.76/bcprov-jdk18on-1.76.jar:/Users/deepaksaini/.m2/repository/org/bouncycastle/bcutil-jdk18on/1.76/bcutil-jdk18on-1.76.jar:/Users/deepaksaini/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/deepaksaini/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.3.5/docker-java-transport-httpclient5-3.3.5.jar:/Users/deepaksaini/.m2/repository/com/github/docker-java/docker-java-transport/3.3.5/docker-java-transport-3.3.5.jar:/Users/deepaksaini/.m2/repository/net/java/dev/jna/jna/5.13.0/jna-5.13.0.jar:/Users/deepaksaini/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/deepaksaini/.m2/repository/org/apache/commons/commons-lang3/3.14.0/commons-lang3-3.14.0.jar:/Users/deepaksaini/.m2/repository/org/apache/commons/commons-compress/1.26.0/commons-compress-1.26.0.jar:/Users/deepaksaini/.m2/repository/commons-io/commons-io/2.15.1/commons-io-2.15.1.jar:/Users/deepaksaini/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/deepaksaini/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/deepaksaini/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/surefire/surefirebooter-20240519125318946_3.jar"/>
+    <property name="surefire.real.class.path" value="/Users/deepaksaini/eclipse-workspace/Selenium_DS_POM_May2024/target/surefire/surefirebooter-20240521151435958_3.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
@@ -41,7 +41,6 @@
     <property name="os.version" value="14.4.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
-    <property name="browser" value="Chrome"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
     <property name="localRepository" value="/Users/deepaksaini/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
@@ -60,13 +59,13 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="FailTestguestCheckoutUsingBankTransfer" classname="test.FirstTestCase_POJO_fullTest" time="18.977">
+  <testcase name="guestCheckoutUsingBankTransfer" classname="test.FirstCase_POJO" time="12.578">
     <failure message="Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;toEscape&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "toEscape" is null
 	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:38)
 	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116)
-	at org.Pages.CheckOutPage.CountryUsingSelectClass(CheckOutPage.java:107)
-	at org.Pages.CheckOutPage.setBillingAddress(CheckOutPage.java:203)
-	at test.FirstTestCase_POJO_fullTest.FailTestguestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:36)
+	at org.Pages.CheckOutPage.CountryUsingSelectClass(CheckOutPage.java:103)
+	at org.Pages.CheckOutPage.setBillingAddress(CheckOutPage.java:199)
+	at test.FirstCase_POJO.guestCheckoutUsingBankTransfer(FirstCase_POJO.java:39)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -77,41 +76,342 @@
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
 	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
-	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 ]]></failure>
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
 ]]></system-err>
   </testcase>
-  <testcase name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" classname="test.FirstTestCase_POJO_fullTest" time="16.872">
+  <testcase name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" classname="test.FirstCase_POJO" time="14.112"/>
+  <testcase name="CountrySelectUsing_SelectClass" classname="test.FirstCase_POJO" time="14.78">
+    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e50c053897a22a365f2d0f2a916b070a, findElement [using, value]]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64252/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: e50c053897a22a365f2d0f2a916b070a" type="org.openqa.selenium.remote.UnreachableBrowserException"><![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e50c053897a22a365f2d0f2a916b070a, findElement [using, value]]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64252}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64252/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e50c053897a22a365f2d0f2a916b070a
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at org.Pages.CheckOutPage.enterFirstName(CheckOutPage.java:80)
+	at org.Pages.CheckOutPage.setBillingAddress(CheckOutPage.java:198)
+	at test.FirstCase_POJO.CountrySelectUsing_SelectClass(FirstCase_POJO.java:93)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@5773ea57 rejected from java.util.concurrent.ThreadPoolExecutor@3b8b1354[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 195]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.asyncReceive(Http1AsyncReceiver.java:468)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:589)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:546)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:865)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412)
+]]></failure>
+  </testcase>
+  <testcase name="FailTestguestCheckoutUsingBankTransfer" classname="test.FirstTestCase_POJO_fullTest" time="12.643">
+    <failure message="Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;toEscape&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "toEscape" is null
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:38)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116)
+	at org.Pages.CheckOutPage.CountryUsingSelectClass(CheckOutPage.java:103)
+	at org.Pages.CheckOutPage.setBillingAddress(CheckOutPage.java:199)
+	at test.FirstTestCase_POJO_fullTest.FailTestguestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:40)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="CountrySelectUsing_SelectClass" classname="test.FirstTestCase_POJO_fullTest" time="12.855"/>
+  <testcase name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" classname="test.FirstTestCase_POJO_fullTest" time="32.134">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class=&apos;woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received&apos;] (tried for 20 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received'] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at org.Pages.CheckOutPage.getNotice(CheckOutPage.java:215)
+	at test.FirstTestCase_POJO_fullTest.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.208)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bc6f904a9e4d28f78b7e2509e28d93fa, findElement {using=xpath, value=//p[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64216}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64216/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bc6f904a9e4d28f78b7e2509e28d93fa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:194)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:190)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 15 more
+]]></failure>
+  </testcase>
+  <testcase name="guestCheckoutUsingBankTransfer" classname="test.FirstCase_POJO_using_Jackson" time="0.291">
+    <failure message="Unrecognized field &quot;StreetAddress01&quot; (class org.Objects.BillingAddress), not marked as ignorable (9 known properties: &quot;lastName&quot;, &quot;town&quot;, &quot;streetAddress02&quot;, &quot;country&quot;, &quot;emailID&quot;, &quot;firstName&quot;, &quot;zipCode&quot;, &quot;state&quot;, &quot;streetAddress01&quot;])&#10; at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 5, column: 23] (through reference chain: org.Objects.BillingAddress[&quot;StreetAddress01&quot;])" type="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException"><![CDATA[com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "StreetAddress01" (class org.Objects.BillingAddress), not marked as ignorable (9 known properties: "lastName", "town", "streetAddress02", "country", "emailID", "firstName", "zipCode", "state", "streetAddress01"])
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 5, column: 23] (through reference chain: org.Objects.BillingAddress["StreetAddress01"])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1153)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2241)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1793)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1771)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:316)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4905)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3885)
+	at org.utils.JacksonUtils.desirilization(JacksonUtils.java:17)
+	at test.FirstCase_POJO_using_Jackson.guestCheckoutUsingBankTransfer(FirstCase_POJO_using_Jackson.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="guestCheckoutUsingBankTransfer" classname="test.FirstCase_original" time="1.448">
+    <failure message="element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;button alt&quot; name=&quot;woocommerce_checkout_place_order&quot; id=&quot;place_order&quot; value=&quot;...&quot; data-value=&quot;Place order&quot;&gt;Place order&lt;/button&gt; is not clickable at point (1080, 172). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;&quot;&gt;&lt;/div&gt;&#10;  (Session info: chrome=124.0.6367.208)&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [e4831950a855e7e1b9f3279a75625e49, clickElement {id=f.514BBC6AAE03E8F118C641F4A944D053.d.6DD1A891E90CCAE4807CDA38D2B12DEC.e.157}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64093/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (e4831950a855e7e1b9f3279a75625e49)] -&gt; xpath: //button[@id=&apos;place_order&apos;]]&#10;Session ID: e4831950a855e7e1b9f3279a75625e49" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="..." data-value="Place order">Place order</button> is not clickable at point (1080, 172). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;"></div>
+  (Session info: chrome=124.0.6367.208)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e4831950a855e7e1b9f3279a75625e49, clickElement {id=f.514BBC6AAE03E8F118C641F4A944D053.d.6DD1A891E90CCAE4807CDA38D2B12DEC.e.157}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64093}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64093/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (e4831950a855e7e1b9f3279a75625e49)] -> xpath: //button[@id='place_order']]
+Session ID: e4831950a855e7e1b9f3279a75625e49
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at test.FirstCase_original.guestCheckoutUsingBankTransfer(FirstCase_original.java:71)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+  </testcase>
+  <testcase name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" classname="test.FirstCase_original" time="11.6">
+    <failure message="stale element reference: stale element not found in the current frame&#10;  (Session info: chrome=124.0.6367.208)&#10;For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [d31f1d005f7b7b229e719482ee5a3fad, clickElement {id=f.BC3D8F2C147993DCC51A5B5E416D1625.d.19D37A8FE5864ABB810FBC9AA2F0261D.e.211}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64185/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on mac (d31f1d005f7b7b229e719482ee5a3fad)] -&gt; xpath: //button[@id=&apos;place_order&apos;]]&#10;Session ID: d31f1d005f7b7b229e719482ee5a3fad" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: stale element not found in the current frame
+  (Session info: chrome=124.0.6367.208)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d31f1d005f7b7b229e719482ee5a3fad, clickElement {id=f.BC3D8F2C147993DCC51A5B5E416D1625.d.19D37A8FE5864ABB810FBC9AA2F0261D.e.211}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.201 (46cf136d27d..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64185}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64185/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d31f1d005f7b7b229e719482ee5a3fad)] -> xpath: //button[@id='place_order']]
+Session ID: d31f1d005f7b7b229e719482ee5a3fad
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at test.FirstCase_original.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstCase_original.java:135)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
+    <system-out><![CDATA[OVERLAY SIZE==2
+OVERLAY SIZE==2
+OVERLAY SIZE==2
+OVERLAYS INVISIBLE
+OVERLAYS INVISIBLE
+OVERLAYS INVISIBLE
+]]></system-out>
+  </testcase>
+  <testcase name="guestCheckoutUsingBankTransfer" classname="test.FirstCase_POJO_using_parametrised_constructor_OverLoading" time="0.979">
+    <failure message="Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;toEscape&quot; is null" type="java.lang.NullPointerException"><![CDATA[java.lang.NullPointerException: Cannot invoke "String.contains(java.lang.CharSequence)" because "toEscape" is null
+	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:38)
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:116)
+	at org.Pages.CheckOutPage.CountryUsingSelectClass(CheckOutPage.java:103)
+	at org.Pages.CheckOutPage.setBillingAddress(CheckOutPage.java:199)
+	at test.FirstCase_POJO_using_parametrised_constructor_OverLoading.guestCheckoutUsingBankTransfer(FirstCase_POJO_using_parametrised_constructor_OverLoading.java:37)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+]]></failure>
     <system-out><![CDATA[OVERLAY SIZE==2
 OVERLAYS INVISIBLE
 ]]></system-out>
   </testcase>
-  <testcase name="CountrySelectUsing_SelectClass" classname="test.FirstTestCase_POJO_fullTest" time="14.618">
-    <system-out><![CDATA[OVERLAY SIZE==2
-OVERLAYS INVISIBLE
-]]></system-out>
+  <testcase name="guestCheckoutUsingBankTransfer" classname="test.FirstCase" time="0.954"/>
+  <testcase name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" classname="test.FirstCase" time="2.083">
+    <failure message="Error communicating with the remote browser. It may have died.&#10;Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.4.1&apos;, java.version: &apos;21.0.3&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [cf26ea6e1b58eb37ef66ccd021966643, getTitle []]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64232/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: cf26ea6e1b58eb37ef66ccd021966643" type="org.openqa.selenium.remote.UnreachableBrowserException"><![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: 
+Error communicating with the remote browser. It may have died.
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.4.1', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cf26ea6e1b58eb37ef66ccd021966643, getTitle []]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.208, chrome: {chromedriverVersion: 124.0.6367.207 (a9001a6e39f..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64232}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64232/devtoo..., se:cdpVersion: 124.0.6367.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cf26ea6e1b58eb37ef66ccd021966643
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
+	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:78)
+	at org.openqa.selenium.support.ui.ExpectedConditions$2.apply(ExpectedConditions.java:73)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at org.Pages.HomePage.load(HomePage.java:20)
+	at test.FirstCase.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstCase.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@67592818 rejected from java.util.concurrent.ThreadPoolExecutor@69298cc4[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 25]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.asyncReceive(Http1AsyncReceiver.java:468)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:589)
+	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onNext(Http1AsyncReceiver.java:546)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:865)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
+	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
+	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
+	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412)
+]]></failure>
   </testcase>
 </testsuite>
