@@ -15,6 +15,7 @@ public class BasePage {
 	protected WebDriverWait wait;
 	protected WebDriverWait waitLong;
 	protected WebDriverWait waitShort;
+	// private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	// below method is example of parameterized constructor
 	public BasePage(WebDriver driver) {

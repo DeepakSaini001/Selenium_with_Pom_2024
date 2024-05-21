@@ -23,7 +23,7 @@ public class FirstCase_POJO_using_parametrised_constructor_OverLoading extends B
 		BillingAddress billingAddress = new BillingAddress("deepak", "saini", "KKR", "haryana", "KKR", "00012",
 				"Deepak.saini2106@gmail.com");
 
-		HomePage homepage = new HomePage(driver).load();
+		HomePage homepage = new HomePage(getDriver()).load();
 		StorePage storepage = homepage.navigatetoStoreUsingMenu();
 
 		storepage.enterTextSearchField("Blue").clickSearchButton();

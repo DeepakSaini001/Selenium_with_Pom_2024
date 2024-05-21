@@ -27,7 +27,7 @@ public class FirstCase_POJO_using_Jackson extends BaseTest {
 		InputStream is = getClass().getClassLoader().getResourceAsStream("MyBillingAddress.json");
 		billingAddress = JacksonUtils.desirilization(is, billingAddress);
 
-		HomePage homepage = new HomePage(driver).load();
+		HomePage homepage = new HomePage(getDriver()).load();
 		StorePage storepage = homepage.navigatetoStoreUsingMenu();
 
 		storepage.enterTextSearchField("Blue").clickSearchButton();

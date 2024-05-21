@@ -20,7 +20,7 @@ public class FirstCase extends BaseTest {
 	@Test(priority = 0)
 	public void guestCheckoutUsingBankTransfer() {
 
-		HomePage homepage = new HomePage(driver).load();
+		HomePage homepage = new HomePage(getDriver()).load();
 		StorePage storepage = homepage.navigatetoStoreUsingMenu();
 		/*
 		 * check the return type of ClickStoreMenulink method. it is StorePage. as we
@@ -52,7 +52,7 @@ public class FirstCase extends BaseTest {
 	@Test(priority = 1)
 	public void LoginAndCheckOut_guestCheckoutUsingBankTransfer() throws InterruptedException {
 
-		StorePage storepage = new HomePage(driver).load().navigatetoStoreUsingMenu().enterTextSearchField("Blue")
+		StorePage storepage = new HomePage(getDriver()).load().navigatetoStoreUsingMenu().enterTextSearchField("Blue")
 				.clickSearchButton();
 
 		AssertJUnit.assertEquals(storepage.getTitle(), "Search results: “Blue”");

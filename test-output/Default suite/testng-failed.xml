@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Flipkart">
+      <class name="test.FirstTestCase_POJO_fullTest">
         <methods>
-          <include name="Flipakrt"/>
+          <include name="quitDriver"/>
+          <include name="StartDriver"/>
+          <include name="FailTestguestCheckoutUsingBankTransfer"/>
         </methods>
-      </class> <!-- test.Flipkart -->
+      </class> <!-- test.FirstTestCase_POJO_fullTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

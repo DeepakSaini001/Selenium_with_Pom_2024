@@ -19,9 +19,9 @@
 				<configuration>
 				  <parallel>methods</parallel>
                     <threadCount>6</threadCount>
-					<suiteXmlFiles>
+					<!-- <suiteXmlFiles>
 						<suiteXmlFile>testng_Execute_Specific_TestCase.xml</suiteXmlFile>
-					</suiteXmlFiles>
+					</suiteXmlFiles> -->
 				</configuration>
 			</plugin>
 		</plugins>
