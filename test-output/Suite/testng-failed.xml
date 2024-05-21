@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test.FirstTestCase_POJO_fullTest">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="StartDriver"/>
+          <include name="FailTestguestCheckoutUsingBankTransfer"/>
+        </methods>
+      </class> <!-- test.FirstTestCase_POJO_fullTest -->
+      <class name="test.FirstCase_POJO_using_parametrised_constructor_OverLoading">
+        <methods>
+          <include name="guestCheckoutUsingBankTransfer"/>
+          <include name="quitDriver"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- test.FirstCase_POJO_using_parametrised_constructor_OverLoading -->
+      <class name="test.FirstCase_original">
+        <methods>
+          <include name="LoginAndCheckOut_guestCheckoutUsingBankTransfer"/>
+          <include name="guestCheckoutUsingBankTransfer"/>
+        </methods>
+      </class> <!-- test.FirstCase_original -->
+      <class name="test.FirstCase">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="LoginAndCheckOut_guestCheckoutUsingBankTransfer"/>
+          <include name="guestCheckoutUsingBankTransfer"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- test.FirstCase -->
+      <class name="test.FirstCase_POJO">
+        <methods>
+          <include name="guestCheckoutUsingBankTransfer"/>
+          <include name="quitDriver"/>
+          <include name="LoginAndCheckOut_guestCheckoutUsingBankTransfer"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- test.FirstCase_POJO -->
+      <class name="test.FirstCase_POJO_using_Jackson">
+        <methods>
+          <include name="quitDriver"/>
+          <include name="guestCheckoutUsingBankTransfer"/>
+          <include name="StartDriver"/>
+        </methods>
+      </class> <!-- test.FirstCase_POJO_using_Jackson -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
