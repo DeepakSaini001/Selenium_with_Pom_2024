@@ -6,6 +6,7 @@
       <class name="test.FirstTestCase_POJO_fullTest">
         <methods>
           <include name="quitDriver"/>
+          <include name="LoginAndCheckOut_guestCheckoutUsingBankTransfer"/>
           <include name="StartDriver"/>
           <include name="FailTestguestCheckoutUsingBankTransfer"/>
         </methods>

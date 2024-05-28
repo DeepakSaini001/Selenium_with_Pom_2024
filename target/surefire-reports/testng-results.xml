@@ -1,29 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-22T00:27:58 IST" name="Surefire suite" finished-at="2024-05-22T00:28:21 IST" duration-ms="22748">
+  <suite started-at="2024-05-28T16:42:46 IST" name="Surefire suite" finished-at="2024-05-28T16:43:20 IST" duration-ms="33975">
     <groups>
     </groups>
-    <test started-at="2024-05-22T00:27:58 IST" name="Surefire test" finished-at="2024-05-22T00:28:21 IST" duration-ms="22748">
+    <test started-at="2024-05-28T16:42:46 IST" name="Surefire test" finished-at="2024-05-28T16:43:20 IST" duration-ms="33975">
       <class name="test.FirstTestCase_POJO_fullTest">
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:27:58 IST" name="StartDriver" finished-at="2024-05-22T00:28:01 IST" duration-ms="2666" status="PASS">
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:46 IST" name="StartDriver" finished-at="2024-05-28T16:42:50 IST" duration-ms="4364" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:27:58 IST" name="StartDriver" finished-at="2024-05-22T00:28:01 IST" duration-ms="2586" status="PASS">
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:46 IST" name="StartDriver" finished-at="2024-05-28T16:42:50 IST" duration-ms="4393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method is-config="true" signature="StartDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:27:58 IST" name="StartDriver" finished-at="2024-05-22T00:28:01 IST" duration-ms="2628" status="PASS">
+        <test-method is-config="true" signature="StartDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:46 IST" name="StartDriver" finished-at="2024-05-28T16:42:50 IST" duration-ms="4385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartDriver -->
-        <test-method signature="CountrySelectUsing_SelectClass()[pri:2, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:28:01 IST" name="CountrySelectUsing_SelectClass" description="Using Select Class provided with getter and setter" finished-at="2024-05-22T00:28:16 IST" duration-ms="15624" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CountrySelectUsing_SelectClass -->
-        <test-method signature="FailTestguestCheckoutUsingBankTransfer()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:28:01 IST" name="FailTestguestCheckoutUsingBankTransfer" description="this test will fail beacuse we have not set the value of country and state and in result will get null exception" finished-at="2024-05-22T00:28:09 IST" duration-ms="8841" status="FAIL">
+        <test-method signature="FailTestguestCheckoutUsingBankTransfer()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:50 IST" name="FailTestguestCheckoutUsingBankTransfer" description="this test will fail beacuse we have not set the value of country and state and in result will get null exception" finished-at="2024-05-28T16:42:59 IST" duration-ms="8374" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.contains(java.lang.CharSequence)" because "toEscape" is null]]>
@@ -54,19 +50,75 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FailTestguestCheckoutUsingBankTransfer -->
-        <test-method signature="LoginAndCheckOut_guestCheckoutUsingBankTransfer()[pri:1, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:28:01 IST" name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" description=" using normal billing address" finished-at="2024-05-22T00:28:21 IST" duration-ms="19973" status="PASS">
+        <test-method signature="CountrySelectUsing_SelectClass()[pri:2, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:50 IST" name="CountrySelectUsing_SelectClass" description="Using Select Class provided with getter and setter" finished-at="2024-05-28T16:43:09 IST" duration-ms="19007" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CountrySelectUsing_SelectClass -->
+        <test-method signature="LoginAndCheckOut_guestCheckoutUsingBankTransfer()[pri:1, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:50 IST" name="LoginAndCheckOut_guestCheckoutUsingBankTransfer" description=" using normal billing address" finished-at="2024-05-28T16:43:20 IST" duration-ms="29468" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="..." data-value="Place order">Place order</button> is not clickable at point (1080, 173). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;"></div>
+  (Session info: chrome=125.0.6422.112)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b1636a43200bbcfea27f6649a36f5cb, clickElement {id=f.9DC33833D1CD1D955481E9A791A524E9.d.35B2A0695462021840F0F649CF8A0143.e.262}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64799/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (4b1636a43200bbcfea27f6649a36f5cb)] -> xpath: //button[@id='place_order']]
+Session ID: 4b1636a43200bbcfea27f6649a36f5cb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <button type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="..." data-value="Place order">Place order</button> is not clickable at point (1080, 173). Other element would receive the click: <div class="blockUI blockOverlay" style="z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;"></div>
+  (Session info: chrome=125.0.6422.112)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b1636a43200bbcfea27f6649a36f5cb, clickElement {id=f.9DC33833D1CD1D955481E9A791A524E9.d.35B2A0695462021840F0F649CF8A0143.e.262}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64799/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (4b1636a43200bbcfea27f6649a36f5cb)] -> xpath: //button[@id='place_order']]
+Session ID: 4b1636a43200bbcfea27f6649a36f5cb
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at org.Pages.CheckOutPage.clickPlaceOrder(CheckOutPage.java:208)
+at test.FirstTestCase_POJO_fullTest.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginAndCheckOut_guestCheckoutUsingBankTransfer -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:28:09 IST" name="quitDriver" finished-at="2024-05-22T00:28:10 IST" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:42:59 IST" name="quitDriver" finished-at="2024-05-28T16:42:59 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:28:16 IST" name="quitDriver" finished-at="2024-05-22T00:28:16 IST" duration-ms="97" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:43:09 IST" name="quitDriver" finished-at="2024-05-28T16:43:09 IST" duration-ms="100" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-22T00:28:21 IST" name="quitDriver" finished-at="2024-05-22T00:28:21 IST" duration-ms="96" status="PASS">
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:test.FirstTestCase_POJO_fullTest@4f9a3314]" started-at="2024-05-28T16:43:20 IST" name="quitDriver" finished-at="2024-05-28T16:43:20 IST" duration-ms="98" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

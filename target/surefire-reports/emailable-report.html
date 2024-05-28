@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,748</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">33,975</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.FirstTestCase_POJO_fullTest</td><td><a href="#m0">FailTestguestCheckoutUsingBankTransfer</a></td><td rowspan="1">1716317881090</td><td rowspan="1">8841</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">test.FirstTestCase_POJO_fullTest</td><td><a href="#m1">CountrySelectUsing_SelectClass</a></td><td rowspan="1">1716317881048</td><td rowspan="1">15624</td></tr><tr class="passedeven"><td><a href="#m2">LoginAndCheckOut_guestCheckoutUsingBankTransfer</a></td><td rowspan="1">1716317881128</td><td rowspan="1">19973</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">test.FirstTestCase_POJO_fullTest</td><td><a href="#m0">FailTestguestCheckoutUsingBankTransfer</a></td><td rowspan="1">1716894770827</td><td rowspan="1">8374</td></tr><tr class="failedeven"><td><a href="#m1">LoginAndCheckOut_guestCheckoutUsingBankTransfer</a></td><td rowspan="1">1716894770855</td><td rowspan="1">29468</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">test.FirstTestCase_POJO_fullTest</td><td><a href="#m2">CountrySelectUsing_SelectClass</a></td><td rowspan="1">1716894770847</td><td rowspan="1">19007</td></tr></tbody>
 </table>
 <h2>Surefire test</h2><h3 id="m0">test.FirstTestCase_POJO_fullTest#FailTestguestCheckoutUsingBankTransfer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;String.contains(java.lang.CharSequence)&quot; because &quot;toEscape&quot; is null
 	at org.openqa.selenium.support.ui.Quotes.escape(Quotes.java:38)
@@ -23,7 +23,30 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 ... Removed 10 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.FirstTestCase_POJO_fullTest#CountrySelectUsing_SelectClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.FirstTestCase_POJO_fullTest#LoginAndCheckOut_guestCheckoutUsingBankTransfer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.FirstTestCase_POJO_fullTest#LoginAndCheckOut_guestCheckoutUsingBankTransfer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;button alt&quot; name=&quot;woocommerce_checkout_place_order&quot; id=&quot;place_order&quot; value=&quot;...&quot; data-value=&quot;Place order&quot;&gt;Place order&lt;/button&gt; is not clickable at point (1080, 173). Other element would receive the click: &lt;div class=&quot;blockUI blockOverlay&quot; style=&quot;z-index: 1000; border: none; margin: 0px; padding: 0px; width: 100%; height: 100%; top: 0px; left: 0px; background: rgb(255, 255, 255); opacity: 0.6; cursor: default; position: absolute;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=125.0.6422.112)
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;21.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4b1636a43200bbcfea27f6649a36f5cb, clickElement {id=f.9DC33833D1CD1D955481E9A791A524E9.d.35B2A0695462021840F0F649CF8A0143.e.262}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.112, chrome: {chromedriverVersion: 125.0.6422.78 (14db42ec38ad..., userDataDir: /var/folders/yx/3kwfkj954dd...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64799}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64799/devtoo..., se:cdpVersion: 125.0.6422.112, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (4b1636a43200bbcfea27f6649a36f5cb)] -&gt; xpath: //button[@id=&apos;place_order&apos;]]
+Session ID: 4b1636a43200bbcfea27f6649a36f5cb
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.Pages.CheckOutPage.clickPlaceOrder(CheckOutPage.java:208)
+	at test.FirstTestCase_POJO_fullTest.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:69)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.FirstTestCase_POJO_fullTest#CountrySelectUsing_SelectClass</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

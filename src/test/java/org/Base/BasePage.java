@@ -15,12 +15,11 @@ public class BasePage {
 	protected WebDriverWait wait;
 	protected WebDriverWait waitLong;
 	protected WebDriverWait waitShort;
-	// private static ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 
 	// below method is example of parameterized constructor
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		waitLong = new WebDriverWait(driver, Duration.ofSeconds(15)); // this wait object can be used furhter in each
 																		// page
 																		// object class
