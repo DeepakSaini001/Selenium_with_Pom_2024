@@ -5,6 +5,7 @@ org/utils/JacksonUtils.class
 org/Base/BasePage.class
 constants/DriverType.class
 test/FirstCase.class
+test/FirstTestCase_POJO_fullTest2.class
 org/Pages/CartPage_Pagefactory.class
 test/FirstCase_POJO_using_Jackson.class
 org/Objects/BillingAddress.class

@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 public class HomePage extends BasePage {
 
 	private final By StoreMenuLink = By.xpath("//a[contains(text(),'Store')]");
+	private final By MenMenuLink=By.xpath("//li[@id='menu-item-1228']");
+	private final By Account=By.xpath("//li[@id='menu-item-1237']");
 
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -26,6 +28,15 @@ public class HomePage extends BasePage {
 	//	driver.findElement(StoreMenuLink).click();
 		return new StorePage(driver);
 
+	}
+	
+	public MenPage navigateToMenUsingMenu() {
+		wait.until(ExpectedConditions.elementToBeClickable(MenMenuLink)).click();
+		return new MenPage(driver);
+	}
+	public LoginPage navigatetoAccountUsingMainMenu() {
+		wait.until(ExpectedConditions.elementToBeClickable(Account)).click();
+		return new LoginPage(driver);
 	}
 
 }

@@ -9,6 +9,7 @@ public class BaseTest {
 	private ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>();
 	
 
+
 	private void setDriver(WebDriver driver) {
 		this.driver.set(driver);
 	}
