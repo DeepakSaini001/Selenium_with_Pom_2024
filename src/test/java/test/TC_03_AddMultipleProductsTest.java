@@ -13,22 +13,21 @@ import org.testng.annotations.Test;
 
 import constants.Constants_data;
 
-public class TC_02_MenPageTest extends BaseTest {
-
+public class TC_03_AddMultipleProductsTest extends BaseTest {
 	@Test
-	public void OrderThroughMenPage() {
-
+	public void AddMultipleProduct() {
 		LoginPage login = new HomePage(getDriver()).load().navigatetoAccountUsingMainMenu();
 		Assert.assertEquals(login.verifyAccountTitle(), Constants_data.AccountTitle);
 		SuccessfulLoginPage LoggedIn = login.enterUserName(Constants_data.UserName02)
 				.enterPassword(Constants_data.PASSWORD02).clickLoginButton();
 		Assert.assertEquals(LoggedIn.verifyUserLoggedIn(), Constants_data.LoggedInTitle);
-		MenPage menpage = login.navigateToMenUsingMenu().enterTextSearchField(Constants_data.ProductSearch)
-				.clickSearchButton();
-		Assert.assertEquals(menpage.verifySearchTitle(), Constants_data.SearchResultTitle);
-		menpage.clickAddToCartButton(Constants_data.ProductName);
+
+		MenPage menpage = login.navigateToMenUsingMenu().clickAddToCartButton(Constants_data.ProductName)
+				.clickAddToCartButton(Constants_data.ProductName02);
 		CartPage cartpage = menpage.clickViewCartButton();
 		Assert.assertEquals(cartpage.getProductName(), Constants_data.ProductName);
+
+		Assert.assertEquals(cartpage.getProductName(), cartpage.dynamicProductTable());
 
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton().setBillingAddress(setBillingAddressDetails())
 				.SelectDirectBankTransfer().clickPlaceOrder();

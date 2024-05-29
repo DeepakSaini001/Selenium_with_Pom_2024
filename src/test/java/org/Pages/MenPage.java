@@ -40,7 +40,7 @@ public class MenPage extends BasePage {
 		return this;
 	}
 
-	public CartPage VerifyViewCartButton() {
+	public CartPage clickViewCartButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(ViewCartButton)).click();
 		return new CartPage(driver);
 

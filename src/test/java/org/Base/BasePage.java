@@ -23,7 +23,7 @@ public class BasePage {
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
-		waitLong = new WebDriverWait(driver, Duration.ofSeconds(15)); // this wait object can be used furhter in each
+		waitLong = new WebDriverWait(driver, Duration.ofSeconds(15)); // this wait object can be used further in each
 																		// page
 																		// object class
 		waitShort = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -47,13 +47,6 @@ public class BasePage {
 	public WebElement waitForElementToBeVisible(By element) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 	}
-	public static BillingAddress setBillingAddressDetails() {
-		BillingAddress billingAddress = new BillingAddress();
-
-		return billingAddress.setFirstName(Constants_data.FirstName).setLastName(Constants_data.LastName)
-				.setStreetAddress01(Constants_data.FirstAddress).setStreetAddress02(Constants_data.LastAddress)
-				.setTown(Constants_data.Town).setZipCode(Constants_data.ZipCode).setEmailID(Constants_data.EmailID)
-				.setCountry(Constants_data.Country).setState(Constants_data.State);
-	}
+	
 
 }

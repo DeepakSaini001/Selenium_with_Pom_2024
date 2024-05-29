@@ -57,4 +57,10 @@ public class HomePage extends BasePage {
  * page then what to do?
  * 
  * Answer-- use Builder Pattern.
+ * 
+ *  Question- if we are still on the current page and  want to go to other
+ * page then what to do?
+ * 
+ * Answer-- use fluent interface.
+ * 
  */
