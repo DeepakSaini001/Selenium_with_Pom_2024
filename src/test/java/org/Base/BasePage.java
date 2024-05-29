@@ -3,11 +3,14 @@ package org.Base;
 import java.time.Duration;
 import java.util.List;
 
+import org.Objects.BillingAddress;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import constants.Constants_data;
 
 public class BasePage {
 
@@ -43,6 +46,14 @@ public class BasePage {
 
 	public WebElement waitForElementToBeVisible(By element) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
+	}
+	public static BillingAddress setBillingAddressDetails() {
+		BillingAddress billingAddress = new BillingAddress();
+
+		return billingAddress.setFirstName(Constants_data.FirstName).setLastName(Constants_data.LastName)
+				.setStreetAddress01(Constants_data.FirstAddress).setStreetAddress02(Constants_data.LastAddress)
+				.setTown(Constants_data.Town).setZipCode(Constants_data.ZipCode).setEmailID(Constants_data.EmailID)
+				.setCountry(Constants_data.Country).setState(Constants_data.State);
 	}
 
 }

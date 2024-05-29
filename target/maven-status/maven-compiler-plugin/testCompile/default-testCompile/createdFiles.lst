@@ -1,3 +1,5 @@
+test/TC_02_MenPageTest.class
+org/Pages/MenPage.class
 test/FirstCase_original.class
 org/Pages/CheckOutPage.class
 test/Flipkart.class
@@ -9,10 +11,12 @@ test/FirstTestCase_POJO_fullTest2.class
 org/Pages/CartPage_Pagefactory.class
 test/FirstCase_POJO_using_Jackson.class
 org/Objects/BillingAddress.class
+org/Pages/SuccessfulLoginPage.class
 org/Pages/StorePage.class
 test/FirstCase_POJO_using_parametrised_constructor_OverLoading.class
 org/Base/BaseTest.class
 test/FirstCase_POJO.class
+org/Pages/LoginPage.class
 test/FirstTestCase_POJO_fullTest.class
 org/Pages/CartPage.class
 org/Pages/HomePage.class

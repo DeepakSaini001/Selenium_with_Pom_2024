@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="test.FirstTestCase_POJO_fullTest"/>
+      <class name="test.TC_02_MenPageTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

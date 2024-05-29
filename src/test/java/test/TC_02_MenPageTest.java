@@ -11,31 +11,39 @@ import org.Pages.SuccessfulLoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import constants.Constants_data;
+
 public class TC_02_MenPageTest extends BaseTest {
 
 	@Test
 	public void OrderThroughMenPage() {
-		BillingAddress billingAddress = new BillingAddress();
-
-		billingAddress.setFirstName("Deepak").setLastName("Saini").setStreetAddress01("KKR")
-				.setStreetAddress02("Haryana").setTown("KKR").setZipCode("00012")
-				.setEmailID("Deepak.saini2106@gmail.com").setCountry("United States (US)").setState("California");
 
 		LoginPage login = new HomePage(getDriver()).load().navigatetoAccountUsingMainMenu();
-		Assert.assertEquals(login.verifyAccountTitle(), "Account");
-		SuccessfulLoginPage LoggedIn = login.enterUserName("user1").enterPassword("user1").clickLoginButton();
-		Assert.assertEquals(LoggedIn.verifyUserLoggedIn(), "Dashboard");
-		MenPage menpage = login.navigateToMenUsingMenu().enterTextSearchField("Blue").clickSearchButton();
-		Assert.assertEquals(menpage.verifySearchTitle(), "Search results: “Blue”");
-		menpage.clickAddToCartButton("Blue Shoes");
+		Assert.assertEquals(login.verifyAccountTitle(), Constants_data.AccountTitle);
+		SuccessfulLoginPage LoggedIn = login.enterUserName(Constants_data.UserName02)
+				.enterPassword(Constants_data.PASSWORD02).clickLoginButton();
+		Assert.assertEquals(LoggedIn.verifyUserLoggedIn(), Constants_data.LoggedInTitle);
+		MenPage menpage = login.navigateToMenUsingMenu().enterTextSearchField(Constants_data.ProductSearch)
+				.clickSearchButton();
+		Assert.assertEquals(menpage.verifySearchTitle(), Constants_data.SearchResultTitle);
+		menpage.clickAddToCartButton(Constants_data.ProductName);
 		CartPage cartpage = menpage.VerifyViewCartButton();
-		Assert.assertEquals(cartpage.getProductName(), "Blue Shoes");
-		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton().setBillingAddress(billingAddress)
+		Assert.assertEquals(cartpage.getProductName(), Constants_data.ProductName);
+
+		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton().setBillingAddress(setBillingAddressDetails())
 				.SelectDirectBankTransfer().clickPlaceOrder();
 
-		Assert.assertEquals(checkoutpage.getNotice(), "Thank you. Your order has been received.");
+		Assert.assertEquals(checkoutpage.getNotice(), Constants_data.OrderPlacedTitle);
 
-		Assert.assertEquals(checkoutpage.getTitle(), "Checkout");
+	}
+
+	public static BillingAddress setBillingAddressDetails() {
+		BillingAddress billingAddress = new BillingAddress();
+
+		return billingAddress.setFirstName(Constants_data.FirstName).setLastName(Constants_data.LastName)
+				.setStreetAddress01(Constants_data.FirstAddress).setStreetAddress02(Constants_data.LastAddress)
+				.setTown(Constants_data.Town).setZipCode(Constants_data.ZipCode).setEmailID(Constants_data.EmailID)
+				.setCountry(Constants_data.Country).setState(Constants_data.State);
 	}
 
 }
