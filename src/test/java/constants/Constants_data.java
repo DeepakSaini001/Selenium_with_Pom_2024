@@ -2,6 +2,8 @@ package constants;
 
 public interface Constants_data {
 	
+	final static String BaseURL="https://askomdch.com";
+	
 	final static String UserName01 = "user1";
 	final static String PASSWORD01 = "user1";
 	final static String UserName02 = "user2";
@@ -17,7 +19,7 @@ public interface Constants_data {
 	final static String State = "California";
 	final static String ProductSearch = "Blue";
 	final static String ProductName = "Blue Shoes";
-	final static String ProductName02 = "Red Shoes";
+	final static String ProductName02 = "Basic Blue Jeans";
 	final static String AccountTitle = "Account";
 	final static String LoggedInTitle = "Dashboard";
 	final static String SearchResultTitle = "Search results: “Blue”";

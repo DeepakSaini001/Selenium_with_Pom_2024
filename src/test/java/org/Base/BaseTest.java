@@ -1,5 +1,7 @@
 package org.Base;
 
+import java.io.IOException;
+
 import org.Factory.DriverManager;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterMethod;
@@ -19,7 +21,7 @@ public class BaseTest {
 	}
 
 	@BeforeMethod
-	public void StartDriver() {
+	public void StartDriver() throws IOException {
 		setDriver(new DriverManager().InitilizeDriver());
 		System.out.println("Current thread" + Thread.currentThread().getId() + ", " + "Driver" + getDriver());
 

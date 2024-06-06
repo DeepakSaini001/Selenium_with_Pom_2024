@@ -30,7 +30,8 @@ public class BasePage {
 	}
 
 	public void load(String endPoint) {
-		driver.get("https://askomdch.com/" + endPoint);
+		 driver.get("https://askomdch.com/" + endPoint);
+		//driver.get(Constants_data.BaseURL);
 	}
 
 	public void waitForOverlaysToDisappear(By overlay) {
@@ -47,6 +48,5 @@ public class BasePage {
 	public WebElement waitForElementToBeVisible(By element) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 	}
-	
 
 }

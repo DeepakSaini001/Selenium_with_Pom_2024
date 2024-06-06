@@ -1,43 +1,42 @@
 package org.Factory;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverManager {
 
-	public WebDriver InitilizeDriver() {
-		// System.setProperty("webdriver.chrome.driver", "/Users/deepaksaini/Downloads/Selenium/chromedriver");
+	public WebDriver InitilizeDriver() throws IOException {
+		// System.setProperty("webdriver.chrome.driver",
+		// "/Users/deepaksaini/Downloads/Selenium/chromedriver");
+		
 		WebDriverManager.chromedriver().cachePath("Drivers").setup();
 		WebDriver driver = new ChromeDriver();
-		
+
 		driver.manage().window().maximize();
-		
+
 		return driver;
 	}
 
-	/*public WebDriver InitilizeDriver() {
-		WebDriver driver;
-		String browser = System.getProperty("browser");
-		switch (browser) {
-		case "Chrome":
-			WebDriverManager.chromedriver().cachePath("Drivers").setup();
-			driver = new ChromeDriver();
-			break;
-		case "Firefox":
-			WebDriverManager.firefoxdriver().cachePath("Drivers").setup();
-			driver = new FirefoxDriver();
-			break;
-		default:
-			throw new IllegalStateException("invalid browser name " + browser);
-		}
-
-		driver.manage().window().maximize();
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		return driver;
-	}*/
+	/*
+	 * public WebDriver InitilizeDriver() { WebDriver driver; String browser =
+	 * System.getProperty("browser"); switch (browser) { case "Chrome":
+	 * WebDriverManager.chromedriver().cachePath("Drivers").setup(); driver = new
+	 * ChromeDriver(); break; case "Firefox":
+	 * WebDriverManager.firefoxdriver().cachePath("Drivers").setup(); driver = new
+	 * FirefoxDriver(); break; default: throw new
+	 * IllegalStateException("invalid browser name " + browser); }
+	 * 
+	 * driver.manage().window().maximize(); //
+	 * driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); return
+	 * driver; }
+	 */
 }
 
 /*

@@ -1,6 +1,7 @@
 package test;
 
 import java.time.Duration;
+import java.util.List;
 
 import org.Base.BaseTest;
 import org.Pages.CartPage;
@@ -20,7 +21,7 @@ import org.testng.annotations.Test;
 
 import constants.Constants_data;
 
-public class check {
+public class check_withList {
 	@Test
 	public static void hi() throws InterruptedException {
 
@@ -54,20 +55,9 @@ public class check {
 
 		for (int i = 1; i < rowCount - 1; i++) {
 			{
-				String ProductName = driver.findElement(By.xpath(
+				List<WebElement> ProductName = driver.findElements(By.xpath(
 						"//table[@class='shop_table shop_table_responsive cart woocommerce-cart-form__contents'] //tr["
-								+ (i) + "] //td[3]"))
-						.getText();
-
-				System.out.println("Total Products in Cart" + " == " + ProductName);
-				if (ProductName.equals(Constants_data.ProductName02)) {
-					System.out.println(
-							"Found" + Constants_data.ProductName02 + ": Row " + (i) + ", Column " + " " + ProductName);
-				} else
-					System.out.println("fail");
-			}
-
-		}
+								+ (i) + "] //td[3]"));
 		driver.quit();
 	}
-}
+}}}
