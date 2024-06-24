@@ -16,7 +16,7 @@ public class ConfigLoader {
 	private ConfigLoader() {
 
 		properties = PropertyUnitls.propertyLoader(
-				"//Users//deepaksaini//eclipse-workspace//Selenium_DS_POM_May2024//src//test//resources//config.properties");
+				"//Users//deepaksaini//eclipse-workspace//Selenium_DS_POM_May2024//src//test//resources//config_CT.properties");
 	}
 
 	// Public method to provide access to the singleton instance
