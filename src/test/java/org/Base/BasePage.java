@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.utils.ConfigLoader;
 
 import constants.Constants_data;
 
@@ -19,7 +20,8 @@ public class BasePage {
 	protected WebDriverWait waitLong;
 	protected WebDriverWait waitShort;
 
-	// below method is example of parameterized constructor
+	// below method is example of parameterized constructor --so that same webdriver instance will be used in all the base pages
+	
 	public BasePage(WebDriver driver) {
 		this.driver = driver;
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -30,8 +32,9 @@ public class BasePage {
 	}
 
 	public void load(String endPoint) {
-		 driver.get("https://askomdch.com/" + endPoint);
+		// driver.get("https://askomdch.com/" + endPoint);
 		//driver.get(Constants_data.BaseURL);
+		driver.get(ConfigLoader.getInstance().getBaseUrl()+ endPoint); // this is in the congifLoader file using singleton
 	}
 
 	public void waitForOverlaysToDisappear(By overlay) {

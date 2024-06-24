@@ -18,12 +18,12 @@ public class PropertyUnitls {
 				reader.close();
 			} catch (IOException e) {
 				e.printStackTrace();
-				throw new RuntimeException("failed to laod properties file" + filePath);
+				throw new RuntimeException("failed to laod properties file" +" : "+ filePath);
 
 			}
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
-			throw new RuntimeException("properties file not found at" + filePath);
+			throw new RuntimeException("properties file not found at" +" : "+ filePath);
 		}
 
 		return properties;

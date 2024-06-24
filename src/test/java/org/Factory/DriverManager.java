@@ -1,21 +1,14 @@
 package org.Factory;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverManager {
 
 	public WebDriver InitilizeDriver() throws IOException {
-		// System.setProperty("webdriver.chrome.driver",
-		// "/Users/deepaksaini/Downloads/Selenium/chromedriver");
-		
+
 		WebDriverManager.chromedriver().cachePath("Drivers").setup();
 		WebDriver driver = new ChromeDriver();
 

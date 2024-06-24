@@ -14,11 +14,11 @@ public class HomePage extends BasePage {
 	private final By Account=By.xpath("//li[@id='menu-item-1237']");
 
 	public HomePage(WebDriver driver) {
-		super(driver);
+		super(driver); //created the constructor and super keyword to call the parent class constructor which is in BasePage
 	}
 
 	public HomePage load() {
-		load("/");
+		load("/"); // this method is from the BasePage
 		wait.until(ExpectedConditions.titleContains("AskOmDch"));
 		return this;
 	}
