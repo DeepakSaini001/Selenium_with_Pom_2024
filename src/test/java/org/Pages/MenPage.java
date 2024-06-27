@@ -25,7 +25,7 @@ public class MenPage extends BasePage {
 		return this;
 	}
 
-	public String verifySearchTitle() {
+	public String getTitle() {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(title)).getText();
 
 	}
@@ -45,5 +45,6 @@ public class MenPage extends BasePage {
 		return new CartPage(driver);
 
 	}
+	
 
 }

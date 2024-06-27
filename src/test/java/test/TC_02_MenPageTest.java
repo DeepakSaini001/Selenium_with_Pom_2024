@@ -25,7 +25,7 @@ public class TC_02_MenPageTest extends BaseTest {
 		Assert.assertEquals(LoggedIn.verifyUserLoggedIn(), Constants_data.LoggedInTitle);
 		MenPage menpage = login.navigateToMenUsingMenu().enterTextSearchField(Constants_data.ProductSearch)
 				.clickSearchButton();
-		Assert.assertEquals(menpage.verifySearchTitle(), Constants_data.SearchResultTitle);
+		Assert.assertEquals(menpage.getTitle(), Constants_data.SearchResultTitle);
 		menpage.clickAddToCartButton(Constants_data.ProductName);
 		CartPage cartpage = menpage.clickViewCartButton();
 		Assert.assertEquals(cartpage.getProductName(), Constants_data.ProductName);

@@ -1,7 +1,5 @@
 package org.Pages;
 
-import java.time.Duration;
-
 import org.Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

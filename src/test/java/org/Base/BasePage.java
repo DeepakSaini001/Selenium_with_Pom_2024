@@ -51,5 +51,14 @@ public class BasePage {
 	public WebElement waitForElementToBeVisible(By element) {
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(element));
 	}
+	public String getCurrentUrl() {
+		 return driver.getCurrentUrl();
+
+	}
+
+	public Boolean verifyURLContains(String expectedString) {
+
+		return wait.until(ExpectedConditions.urlContains(expectedString));
+	}
 
 }

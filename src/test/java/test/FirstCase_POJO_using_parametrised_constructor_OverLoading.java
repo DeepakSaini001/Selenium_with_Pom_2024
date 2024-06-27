@@ -31,7 +31,7 @@ public class FirstCase_POJO_using_parametrised_constructor_OverLoading extends B
 		AssertJUnit.assertEquals(storepage.getTitle(), "Search results: “Blue”");
 		storepage.clickAddToCartButton("Blue Shoes");
 		Thread.sleep(5000);
-		CartPage cartpage = storepage.VerifyViewCartButton();
+		CartPage cartpage = storepage.clickViewCartButton();
 
 		AssertJUnit.assertEquals(cartpage.getProductName(), "Blue Shoes");
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton().setBillingAddress(billingAddress).ClickCountryDropDown()

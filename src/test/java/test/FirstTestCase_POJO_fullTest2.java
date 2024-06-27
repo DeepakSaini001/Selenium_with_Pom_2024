@@ -29,7 +29,7 @@ public class FirstTestCase_POJO_fullTest2 extends BaseTest {
 		Assert.assertEquals(storepage.getTitle(), "Search results: “Blue”");
 		storepage.clickAddToCartButton("Blue Shoes");
 
-		CartPage cartpage = storepage.VerifyViewCartButton();
+		CartPage cartpage = storepage.clickViewCartButton();
 
 		Assert.assertEquals(cartpage.getProductName(), "Blue Shoes");
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton().setBillingAddress(billingAddress)
@@ -50,7 +50,7 @@ public class FirstTestCase_POJO_fullTest2 extends BaseTest {
 		Assert.assertEquals(storepage.getTitle(), "Search results: “Blue”");
 		storepage.clickAddToCartButton("Blue Shoes");
 
-		CartPage cartpage = storepage.VerifyViewCartButton();
+		CartPage cartpage = storepage.clickViewCartButton();
 
 		Assert.assertEquals(cartpage.getProductName(), "Blue Shoes");
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton();
@@ -83,7 +83,7 @@ public class FirstTestCase_POJO_fullTest2 extends BaseTest {
 		Assert.assertEquals(storepage.getTitle(), "Search results: “Blue”");
 		storepage.clickAddToCartButton("Blue Shoes");
 
-		CartPage cartpage = storepage.VerifyViewCartButton();
+		CartPage cartpage = storepage.clickViewCartButton();
 
 		Assert.assertEquals(cartpage.getProductName(), "Blue Shoes");
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton().setBillingAddress(billingAddress)

@@ -47,10 +47,18 @@ public class StorePage extends BasePage {
 		return this;
 	}
 
-	public CartPage VerifyViewCartButton() {
+	public CartPage clickViewCartButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(ViewCartButton)).click();
 		// driver.findElement(ViewCartButton).click();
 		return new CartPage(driver);
 
+	}
+	public StorePage load() {
+		load("/store");
+		return this;
+	}
+	public StorePage search(String txt) {
+		enterTextSearchField(txt).clickSearchButton();
+		return this;
 	}
 }

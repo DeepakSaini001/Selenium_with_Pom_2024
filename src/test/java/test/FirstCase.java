@@ -33,7 +33,7 @@ public class FirstCase extends BaseTest {
 		AssertJUnit.assertEquals(storepage.getTitle(), "Search results: “Blue”");
 		storepage.clickAddToCartButton("Blue Shoes");
 
-		CartPage cartpage = storepage.VerifyViewCartButton();
+		CartPage cartpage = storepage.clickViewCartButton();
 
 		AssertJUnit.assertEquals(cartpage.getProductName(), "Blue Shoes");
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton();
@@ -58,7 +58,7 @@ public class FirstCase extends BaseTest {
 		AssertJUnit.assertEquals(storepage.getTitle(), "Search results: “Blue”");
 		storepage.clickAddToCartButton("Blue Shoes");
 
-		CartPage cartpage = storepage.VerifyViewCartButton();
+		CartPage cartpage = storepage.clickViewCartButton();
 
 		AssertJUnit.assertEquals(cartpage.getProductName(), "Blue Shoes");
 		CheckOutPage checkoutpage = cartpage.ClickCheckOutButton();
