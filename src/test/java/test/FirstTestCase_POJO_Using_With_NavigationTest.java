@@ -21,6 +21,8 @@ public class FirstTestCase_POJO_Using_With_NavigationTest extends BaseTest {
 				.setStreetAddress02("Haryana").setTown("KKR").setZipCode("00012")
 				.setEmailID("Deepak.saini2106@gmail.com");
 
+		NavigationTest a= new NavigationTest();
+		a.NavigateFromHomeToMenUsingMainMenu();
 		HomePage homepage = new HomePage(getDriver()).load();
 		StorePage storepage = homepage.navigatetoStoreUsingMenu();
 

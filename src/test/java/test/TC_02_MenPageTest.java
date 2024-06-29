@@ -15,7 +15,7 @@ import constants.Constants_data;
 
 public class TC_02_MenPageTest extends BaseTest {
 
-	@Test
+	@Test(groups={"sanitytest","regressiontest"})
 	public void OrderThroughMenPage() {
 
 		LoginPage login = new HomePage(getDriver()).load().navigatetoAccountUsingMainMenu();

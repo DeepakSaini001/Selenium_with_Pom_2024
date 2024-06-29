@@ -1,7 +1,5 @@
 package test;
 
-
-
 import org.testng.annotations.Test;
 import org.testng.Assert;
 import org.Base.BaseTest;
@@ -11,15 +9,12 @@ import org.Pages.CheckOutPage;
 import org.Pages.HomePage;
 import org.Pages.StorePage;
 
-
-
 public class FirstTestCase_POJO_fullTest extends BaseTest {
 
-	/*
-	 * @Test(priority = 0, description =
-	 * "this test will fail beacuse we have not set the value of country and state and in result will get null exception"
-	 * ) public void FailTestguestCheckoutUsingBankTransfer() { BillingAddress
-	 * billingAddress = new BillingAddress();
+	@Test(priority = 0, description =
+	  "this test will fail beacuse we have not set the value of country and state and in result will get null exception")
+	   public void FailTestguestCheckoutUsingBankTransfer() {
+		 /*BillingAddress billingAddress = new BillingAddress();
 	 * 
 	 * billingAddress.setFirstName("Deepak").setLastName("Saini").setStreetAddress01
 	 * ("KKR") .setStreetAddress02("Haryana").setTown("KKR").setZipCode("00012")
@@ -46,10 +41,11 @@ public class FirstTestCase_POJO_fullTest extends BaseTest {
 	 * Assert.assertEquals(checkoutpage.getNotice(),
 	 * "Thank you. Your order has been received.");
 	 * 
-	 * }
+	 *}
 	 */
+	}
 
-	@Test(priority = 1, description = " using normal billing address")
+	@Test(priority = 1, description = " using normal billing address",groups={"sanitytest"})
 	public void LoginAndCheckOut_guestCheckoutUsingBankTransfer() {
 
 		StorePage storepage = new HomePage(getDriver()).load().navigatetoStoreUsingMenu().enterTextSearchField("Blue")
@@ -74,7 +70,8 @@ public class FirstTestCase_POJO_fullTest extends BaseTest {
 		Assert.assertEquals(checkoutpage.getNotice(), "Thank you. Your order has been received.");
 	}
 
-	@Test(priority = 2, description = "Using Select Class provided with getter and setter")
+	@Test(priority = 2, description = "Using Select Class provided with getter and setter", groups = {
+			"regressiontest" })
 	public void CountrySelectUsing_SelectClass() {
 
 		BillingAddress billingAddress = new BillingAddress();
