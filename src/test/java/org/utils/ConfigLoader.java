@@ -21,12 +21,12 @@ public class ConfigLoader {
 		String environment = System.getProperty("environment", String.valueOf(Environment_Type.CT));
 		switch (Environment_Type.valueOf(environment)) {
 		case CT:
-			properties = PropertyUnitls.propertyLoader(
+			properties = PropertyUtils.propertyLoader(
 					"//Users//deepaksaini//eclipse-workspace//Selenium_DS_POM_May2024//src//test//resources//config_CT.properties");
 			break;
 		case QA:
 
-			properties = PropertyUnitls.propertyLoader(
+			properties = PropertyUtils.propertyLoader(
 					"//Users//deepaksaini//eclipse-workspace//Selenium_DS_POM_May2024//src//test//resources//config_QA.properties");
 			break;
 		default:
@@ -36,6 +36,7 @@ public class ConfigLoader {
 
 	// Public method to provide access to the singleton instance
 	// only 1 instance is created--- as it is a singleton class
+	// static-- it will be same in whole project.
 	public static ConfigLoader getInstance() {
 		if (configLoader == null) {
 			configLoader = new ConfigLoader();

@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
 
-public class PropertyUnitls {
+public class PropertyUtils {
 
 	public static Properties propertyLoader(String filePath) {
 		Properties properties = new Properties();

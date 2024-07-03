@@ -1,10 +1,13 @@
 package test;
 
+import api.actions.SignUpAPI;
+
 public class d {
 
 	public static void main(String[] args) {
 
-		System.out.println(false && true);
-		System.out.println(true && false);
+		SignUpAPI a = new SignUpAPI();
+		System.out.println("Fetching the register value using Groovy"+" : "+a.fetchRegisterNonceValueUsingGroovy());
+		System.out.println("Fetching the register value using JSoup"+" : "+a.fetchRegisterNonceValueUsingJsoup());
 	}
 }
