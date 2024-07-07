@@ -14,7 +14,7 @@ public class User {
         return this;
     }
 
-    public User(){}
+    public User(){} //default constructor
 
     public User(String username, String password){
         this.username = username;

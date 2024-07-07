@@ -31,6 +31,7 @@ public class SignUpAPI {
 		 Response response=getAccount();
 		 return response.htmlPath().getString("**.findAll { it.@name == 'woocommerce-register-nonce' }.@value");
 	}
+	
 	private String fetchRegisterNonceValueUsingJsoup(){
 	        Response response = getAccount();
 	        Document doc = Jsoup.parse(response.body().prettyPrint());

@@ -13,7 +13,7 @@ public class ConfigLoader {
 
 	// SingleTon design pattern--- means it cannot be access outside of this class
 
-	// Private constructor to prevent instantiation --- SingleTon Design patter
+	// Private constructor to prevent instantiation --- SingleTon Design pattern
 	// private---- constructor cannot be access outside of this class and only 1
 	// instance can be created
 	private ConfigLoader() {
