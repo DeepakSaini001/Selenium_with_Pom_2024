@@ -16,12 +16,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>3.2.5</version>
-				<configuration>
-					<parallel>methods</parallel>
-					<threadCount>6</threadCount>
-					<!-- <suiteXmlFiles> <suiteXmlFile>testng_Execute_Specific_TestCase.xml</suiteXmlFile> 
-						</suiteXmlFiles> -->
-				</configuration>
+				<!-- <configuration> <parallel>methods</parallel> <threadCount>6</threadCount> 
+					<suiteXmlFiles> <suiteXmlFile>testng_Execute_Specific_TestCase.xml</suiteXmlFile> 
+					</suiteXmlFiles> </configuration> -->
 			</plugin>
 		</plugins>
 	</build>
@@ -43,7 +40,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>5.1.1</version>
 		</dependency>
-	<dependency>
+		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>rest-assured</artifactId>
 			<version>5.4.0</version>
@@ -80,7 +77,11 @@
 			<version>2.23.1</version>
 			<scope>test</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>ru.yandex.qatools.ashot</groupId>
+			<artifactId>ashot</artifactId>
+			<version>1.5.4</version>
+		</dependency>
 
 	</dependencies>
 </project>

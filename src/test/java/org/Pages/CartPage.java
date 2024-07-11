@@ -1,14 +1,10 @@
 package org.Pages;
 
-import java.util.List;
-
 import org.Base.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import constants.Constants_data;
 
 public class CartPage extends BasePage {
 
@@ -26,6 +22,8 @@ public class CartPage extends BasePage {
 	}
 
 	public String getProductName() {
+	//	WebElement Product_name =	driver.findElement(ProductName);
+	//	wait.until(ExpectedConditions.stalenessOf(Product_name));
 		return wait.until(ExpectedConditions.visibilityOfElementLocated(ProductName)).getText();
 		// return driver.findElement(ProductName).getText();
 

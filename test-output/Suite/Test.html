@@ -57,11 +57,11 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Jun 28 17:51:41 IST 2024</td>
+<td>Started on:</td><td>Thu Jul 11 11:24:54 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (100 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20386 ms)</td>
 </tr><tr>
-<td>Included groups:</td><td>sanitytest </td>
+<td>Included groups:</td><td></td>
 </tr><tr>
 <td>Excluded groups:</td><td></td>
 </tr>
@@ -76,17 +76,19 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.FirstTestCase_POJO_fullTest.LoginAndCheckOut_guestCheckoutUsingBankTransfer()'><b>LoginAndCheckOut_guestCheckoutUsingBankTransfer</b><br>Test class: test.FirstTestCase_POJO_fullTest<br>Test method:  using normal billing address</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at org.Base.BasePage.load(BasePage.java:37)
-	at org.Pages.HomePage.load(HomePage.java:19)
-	at test.FirstTestCase_POJO_fullTest.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:51)
+<td title='test.TC_02_MenPageTest.OrderThroughMenPage()'><b>OrderThroughMenPage</b><br>Test class: test.TC_02_MenPageTest</td>
+<td><div><pre>java.lang.AssertionError: expected [Search results: “Blue”] but found [Men]
+	at test.TC_02_MenPageTest.OrderThroughMenPage(TC_02_MenPageTest.java:28)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace672746064", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace672746064'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.get(String)&quot; because &quot;this.driver&quot; is null
-	at org.Base.BasePage.load(BasePage.java:37)
-	at org.Pages.HomePage.load(HomePage.java:19)
-	at test.FirstTestCase_POJO_fullTest.LoginAndCheckOut_guestCheckoutUsingBankTransfer(FirstTestCase_POJO_fullTest.java:51)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace670951536", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace670951536'><pre>java.lang.AssertionError: expected [Search results: “Blue”] but found [Men]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at test.TC_02_MenPageTest.OrderThroughMenPage(TC_02_MenPageTest.java:28)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,8 +118,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>test.FirstTestCase_POJO_fullTest@41a0aa7d</td></tr>
+<td>12</td>
+<td>test.TC_02_MenPageTest@3f6f6701</td></tr>
 </table><p>
 </body>
 </html>

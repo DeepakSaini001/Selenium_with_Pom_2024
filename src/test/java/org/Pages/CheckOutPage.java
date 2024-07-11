@@ -2,7 +2,9 @@ package org.Pages;
 
 import org.Base.BasePage;
 import org.Objects.BillingAddress;
+import org.Objects.User;
 import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,7 +34,7 @@ public class CheckOutPage extends BasePage {
 
 	private final By overlay = By.cssSelector(".blockUI.blockOverlay");
 
-	private final By PalceOrder = By.xpath("//button[@id='place_order']");
+	private final By PalaceOrder = By.xpath("//button[@id='place_order']");
 	private final By OrderSuccess = By
 			.xpath("//p[@class='woocommerce-notice woocommerce-notice--success woocommerce-thankyou-order-received']");
 
@@ -42,6 +44,8 @@ public class CheckOutPage extends BasePage {
 	private final By LoginButton = By.xpath("//button[@value='Login']");
 
 	private final By DirectbankTransferRadioButton = By.xpath("//input[@id='payment_method_bacs']");
+	private final By loginBtn = By.name("login");
+	private final By productName = By.cssSelector("td[class='product-name']");
 
 	public CheckOutPage(WebDriver driver) {
 		super(driver);
@@ -203,10 +207,29 @@ public class CheckOutPage extends BasePage {
 				.enterEmailID(billingAddress.getEmailID());
 	}
 
+	public CheckOutPage clickPlaceOrder_UsingTryCatch() throws Exception {
+		waitForOverlaysToDisappear(overlay);
+		WebElement Palace_Order = driver.findElement(PalaceOrder);
+		wait.until(ExpectedConditions.stalenessOf(Palace_Order));
+		int i = 5;
+		while (i > 0) {
+			try {
+				wait.until(ExpectedConditions.elementToBeClickable(PalaceOrder)).click();
+			} catch (StaleElementReferenceException e) {
+				System.out.println("Element not found. Trying Again" + " : " + e);
+			}
+			Thread.sleep(5000);
+			i--;
+		}
+		throw new Exception("Element not found");
+
+	}
+
 	public CheckOutPage clickPlaceOrder() {
 		waitForOverlaysToDisappear(overlay);
-		wait.until(ExpectedConditions.elementToBeClickable(PalceOrder)).click();
-		// driver.findElement(PalceOrder).click();
+
+		wait.until(ExpectedConditions.elementToBeClickable(PalaceOrder)).click();
+
 		return this;
 
 	}
@@ -216,8 +239,9 @@ public class CheckOutPage extends BasePage {
 		// return driver.findElement(OrderSuccess).getText();
 	}
 
-	public CheckOutPage login(String username, String password) {
-		return enterUserName(username).enterPassword(password).ClickLoginButton();
+	public CheckOutPage login(User user) {
+		return enterUserName(user.getUsername()).enterPassword(user.getPassword()).ClickLoginButton()
+				.waitForLoginBtnToDisappear();
 	}
 
 	public CheckOutPage SelectDirectBankTransfer() {
@@ -226,6 +250,30 @@ public class CheckOutPage extends BasePage {
 			e.click();
 		}
 		return this;
+	}
+
+	public CheckOutPage load() {
+		load("/checkout/");
+		return this;
+	}
+
+	private CheckOutPage waitForLoginBtnToDisappear() {
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(loginBtn));
+		return this;
+	}
+
+	public String getProductName() throws Exception {
+		int i = 5;
+		while (i > 0) {
+			try {
+				return wait.until(ExpectedConditions.visibilityOfElementLocated(productName)).getText();
+			} catch (StaleElementReferenceException e) {
+				System.out.println("NOT FOUND. TRYING AGAIN" + e);
+			}
+			Thread.sleep(5000);
+			i--;
+		}
+		throw new Exception("Element not found");
 	}
 
 }

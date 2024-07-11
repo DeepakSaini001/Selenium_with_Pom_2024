@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.OpenNewWindow">
+      <class name="test.TC_02_MenPageTest">
         <methods>
-          <include name="OpenNewWindowTest"/>
+          <include name="quitDriver"/>
+          <include name="StartDriver"/>
+          <include name="OrderThroughMenPage"/>
         </methods>
-      </class> <!-- test.OpenNewWindow -->
+      </class> <!-- test.TC_02_MenPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
