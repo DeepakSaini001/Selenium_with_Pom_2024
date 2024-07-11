@@ -76,11 +76,11 @@ public class BaseTest {
 		System.out.println("Current thread" + Thread.currentThread().getId() + ", " + "Driver" + getDriver());
 		if (result.getStatus() == ITestResult.FAILURE) {
 
-			File destFile = new File("ScreenShot" + File.separator + browser + File.separator
+			File destinationFile = new File("ScreenShot" + File.separator + browser + File.separator
 					+ result.getTestClass().getRealClass().getSimpleName() + "_" + result.getMethod().getMethodName()
 					+ ".png");
-			takeScreenshot(destFile);
-			// takeScreenshotUsingAShot(destFile);
+			takeScreenshot(destinationFile);
+			 takeScreenshotUsingAShot(destinationFile);
 		}
 		getDriver().quit();
 
@@ -94,19 +94,20 @@ public class BaseTest {
 		}
 	}
 
-	private void takeScreenshot(File destFile) throws IOException {
+	private void takeScreenshot(File destinationFile) throws IOException {
 		TakesScreenshot takesScreenshot = (TakesScreenshot) getDriver();
-		File srcFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(srcFile, destFile);
+		File sourceFile = takesScreenshot.getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(sourceFile, destinationFile);
 	}
 
-	private void takeScreenshotUsingAShot(File destFile) {
+	private void takeScreenshotUsingAShot(File destinationFile) {
 		Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(100))
 				.takeScreenshot(getDriver());
 		try {
-			ImageIO.write(screenshot.getImage(), "PNG", destFile);
+			ImageIO.write(screenshot.getImage(), "PNG", destinationFile);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
+
 }
