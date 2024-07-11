@@ -51,7 +51,7 @@ public class BaseTest {
 		System.out.println("If run individual test, then browser will give null value and it is expected because we are"
 				+ " deriving the browser value from testng annotaion Parameter");
 		System.out.println("If run through TestNG, then remove these hardcoded brower value from BaseTest");
-		System.out.println("If run through Individual Test, then add these hardcoded brower value from BaseTest");
+		System.out.println("If run through Individual Test, then add these hardcoded brower value from BaseTest !!");
 
 		browser = System.getProperty("broswer", browser);
 
