@@ -12,10 +12,12 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import constants.Constants_data;
+import io.qameta.allure.Description;
 
 public class TC_02_MenPageTest extends BaseTest {
 
-	@Test(groups={"sanitytest","regressiontest"})
+	@Description("This is the description through Allure Reports")
+	@Test(groups={"sanitytest","regressiontest"}, description ="Order Through Men Page using Login credentials")
 	public void OrderThroughMenPage() {
 
 		LoginPage login = new HomePage(getDriver()).load().navigatetoAccountUsingMainMenu();

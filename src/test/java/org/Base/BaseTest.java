@@ -79,7 +79,7 @@ public class BaseTest {
 			File destinationFile = new File("ScreenShot" + File.separator + browser + File.separator
 					+ result.getTestClass().getRealClass().getSimpleName() + "_" + result.getMethod().getMethodName()
 					+ ".png");
-			takeScreenshot(destinationFile);
+			//takeScreenshot(destinationFile);
 			 takeScreenshotUsingAShot(destinationFile);
 		}
 		getDriver().quit();
